@@ -8,13 +8,13 @@
 **/.toolstarget
 **/.vs
 **/.vscode
+**/*.*proj.user
 **/*.dbmdl
 **/*.jfm
 **/bin
 **/charts
 **/docker-compose*
 **/compose*
-**/*.*proj.user
 **/Dockerfile*
 **/node_modules
 **/npm-debug.log
