@@ -42,11 +42,11 @@ app.MapGet("/items/{id}", (ToDoItemService service, int id) => service.GetItemBy
 app.MapPost("/items", (ToDoItemService service, Item item) => { service.AddItem(item); return "Item added."; });
 app.MapPut("/items/{id}", (ToDoItemService service, int id, Item item) => { item.Id = id; service.UpdateItem(item); return "Item updated."; });
 app.MapDelete("/items/{id}", (ToDoItemService service, int id) => { service.DeleteItem(id); return "Item deleted."; });
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 app.Run();
 
 
